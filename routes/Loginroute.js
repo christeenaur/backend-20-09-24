@@ -10,7 +10,7 @@ app.post ('/loginview',async (request,response)=>{
     try{
         const user =await loginmodel.findOne({username,password});
         console.log(user)
-        if(user){git commit -m "first commit"git remote add origin https://github.com/christeenaur/front-end20-09-24.git
+        if(user){
             response.json({success:true,message:'Login successful'});
                 }
                 else{

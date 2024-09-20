@@ -3,7 +3,7 @@ const cors = require("cors")
 
 const loginrouter = require('./routes/Loginroute')
 const db = require("./Connection/Database")
-
+const Categoryrouter = require('./routes/Categoryroute')
 
 const app = new express();
 
@@ -19,6 +19,8 @@ app.get('/', (request, response) => {
 })
 
 app.use("/login", loginrouter)
+app.use("/Category", Categoryrouter)
+
 
 
 
